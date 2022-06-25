@@ -27,27 +27,27 @@
             <!--<input type="hidden" name="">-->
 
             <H3>
-                <th><b><label for="">REGISTRO DE MASCOTA:</label></b></th>
+                <th><label for="">REGISTRO DE MASCOTA:</label></th>
             </H3>
 
             <div class="mb-3">
-                <th><b><label for="">CODIGO:</label></b></th>
+                <th><label for="">CODIGO:</label></th>
                 <th><input class="form-control" type="text" name="codigo" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">NOMBRE:</label></b></th>
+                <th><label for="">NOMBRE:</label></th>
                 <th><input class="form-control" type="text" name="nombre" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">FECHA_NACIMIENTO:</label></b></th>
+                <th><label for="">FECHA_NACIMIENTO:</label></th>
                 <th><input class="form-control" type="DATE" name="fecha_nacimiento" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">RAZA:</label></b></th>
+                <th><label for="">RAZA:</label></th>
                 <th><input class="form-control" type="text" name="raza" id=""></th>
             </div>
             <input type="hidden" name="editar" id="" value='no' readonly>
-            <input class="btn btn-outline-primary" type="submit" value="GUARDAR">
+            <input class="" type="submit" value="GUARDAR">
         </form>
     </div>
 

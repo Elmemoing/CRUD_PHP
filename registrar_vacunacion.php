@@ -24,7 +24,7 @@
     $resultado_v = mysqli_query($conexiondb, $query_v);
     mysqli_close($conexiondb);
     ?>
-
+<br>
     <div class="col-sm-4 offset-sm-4">
         <form class="" role="form" action="guardar_vacunacion.php" method="post">
             <div class="">
@@ -44,7 +44,7 @@
                     <option value="Tercera">Tercera Dosis</option>
                 </select>
                 <p>NOMBRE DEL VETERINARIO: <input class="form-control" type="text" name="nombre_veterinario" size="50"></p>
-                <input class="btn btn-outline-primary" type="submit" value="Enviar">
+                <input class="" type="submit" value="Enviar">
             </div>
         </form>
     </div>

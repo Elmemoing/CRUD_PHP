@@ -21,8 +21,8 @@
     <?php
     include 'db.php';
     $conexiondb = conectardb();
-    $query = "SELECT * FROM cliente";
-    $resultado = mysqli_query($conexiondb, $query);
+    $query_m = "SELECT * FROM vacuna";
+    $resultado_m = mysqli_query($conexiondb, $query_m);
     mysqli_close($conexiondb);
     ?>
 
@@ -41,33 +41,32 @@
                 ?>
             </div>
 
-
                 <div class="rows-sm-6">
-                    <h1 class="text-center mt-4">Clientes</h1>
+                    <h1 class="text-center mt-4">Vacunacion</h1>
                     <table class="table table-striped">
                         <thead class="table-dark">
                             <tr>
                                 <th scope="col">N</th>
-                                <th scope="col">Cedula</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Apellido</th>
-                                <th scope="col">Telefono</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Dosis</th>
+                                <th scope="col">Mascota</th>
+                                <th scope="col">Veterinario</th>
                                 <th scope="col">Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
                             $index = 1;
-                            while ($paciente = mysqli_fetch_assoc($resultado)) {
+                            while ($paciente = mysqli_fetch_assoc($resultado_m)) {
                                 echo "<tr>";
                                 echo "<th scope='row'>" . $index++ . "</th>";
-                                echo "<td>" . $paciente['cedula'] . "</td>";
-                                echo "<td>" . $paciente['Nombre_cliente'] . "</td>";
-                                echo "<td>" . $paciente['apellido_cliente'] . "</td>";
-                                echo "<td>" . $paciente['telefono'] . "</td>";
+                                echo "<td>" . $paciente['fecha'] . "</td>";
+                                echo "<td>" . $paciente['dosis'] . "</td>";
+                                echo "<td>" . $paciente['id_mascota'] . "</td>";
+                                echo "<td>" . $paciente['nombre_veterinario'] . "</td>";
                                 echo "<td>";
-                                echo "<a href='editar_cliente.php?id_cliente=" . $paciente['id_cliente'] . "' class=''> Editar</i> </a>";
-                                echo "<a href='eliminar_cliente.php?id_cliente=" . $paciente['id_cliente'] . "' class=''> Borrar</i> </a>";
+                                echo "<a href='editar_mascota.php?id_mascota=" . $paciente['id_mascota'] . "' class=''> Editar</i> </a>";
+                                echo "<a href='eliminar_mascota.php?id_mascota=" . $paciente['id_mascota'] . "' class=''> Borrar</i> </a>";
                                 echo "</td>";
                                 echo "</tr>";
                             }
@@ -76,7 +75,7 @@
                     </table>
                 </div>
 
-
+                
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>

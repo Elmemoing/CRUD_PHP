@@ -22,32 +22,32 @@
 
     <div class="col-sm-4 offset-sm-4">
         <br>
-        <form action="guardar_cliente.php" method="post">
+        <form class="contact-form php-mail-form" action="guardar_cliente.php" method="post">
 
             <!--<input type="hidden" name="">-->
 
             <H3>
-                <th><b><label for="">REGISTRO DE CLIENTE:</label></b></th>
+                <th><label for="">REGISTRO DE CLIENTE:</label></th>
             </H3>
 
             <div class="mb-3">
-                <th><b><label for="">CEDULA:</label></b></th>
+                <th><label for="">CEDULA:</label></th>
                 <th><input class="form-control" type="text" name="cedula" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">NOMBRE:</label></b></th>
+                <th><label for="">NOMBRE:</label></th>
                 <th><input class="form-control" type="text" name="nombre_cliente" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">APELLIDO:</label></b></th>
+                <th><label for="">APELLIDO:</label></th>
                 <th><input class="form-control" type="text" name="apellido_cliente" id=""></th>
             </div>
             <div class="mb-3">
-                <th><b><label for="">TELEFONO:</label></b></th>
+                <th><label for="">TELEFONO:</label></th>
                 <th><input class="form-control" type="text" name="telefono" id=""></th>
             </div>
             <input type="hidden" name="editar" id="" value='no' readonly>
-            <input class="btn btn-outline-primary" type="submit" value="GUARDAR">
+            <input class="" type="submit" value="GUARDAR">
         </form>
     </div>
 

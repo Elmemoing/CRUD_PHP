@@ -18,9 +18,9 @@ $menu = <<<END
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="">VETERINARIA PELUDOG</a>
+            <a class="navbar-brand" href="">VETERINARIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,9 +38,57 @@ $menu = <<<END
                     <li class="nav-item">
                     <a class="nav-link" href="registrar_vacunacion.php">Vacunacion</a>
                      </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href=""></a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href=""></a>
+                       </li>
+                       <li class="nav-item">
+                       <a class="nav-link" href=""></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href=""></a>
+                         </li>
+                         <li class="nav-item">
+                         <a class="nav-link" href=""></a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href=""></a>
+                           </li>
+                           <li class="nav-item">
+                           <a class="nav-link" href=""></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href=""></a>
+                             </li>
+                             <li class="nav-item">
+                             <a class="nav-link" href=""></a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href=""></a>
+                               </li>
+                               <li class="nav-item">
+                               <a class="nav-link" href=""></a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href=""></a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link" href=""></a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href=""></a>
+                                   </li>        
                     <li class="nav-item">
-                        <a class="nav-link" href="Listado.php">Listado</a>
+                        <a class="nav-link" href="Listado.php">Listado Clientes</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="listadomascota.php">Listado Mascotas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="listadovacunacion.php">Listado Vacunacion</a>
+            </li>
             </div>
 </header>
 END;
